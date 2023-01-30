@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
+.App {
+  padding: 1em;
+}
+
+h1 {
+  font-family: 'https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC';
+  text-align: center;
+  size: 64px;
+}
+
+body {
+  background-color: rgb(29, 29, 29);
+}
+/* td img {
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+} */
+
+tr:nth-child(odd) {
+  background-color: seagreen;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* typography */
+
+html {
+  font-family: 'helvetica neue', sans-serif;
+}
+
+thead th, tfoot th {
+  font-family: 'Rock Salt';
+}
+
+th {
+  letter-spacing: 2px;
+  padding: 10px;
+  
+}
+
+td {
+  letter-spacing: 1px;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  font-size: 12px;
+  padding: 10px 20px;
+}
+
+input {
+  width: 100%;
+}
+
+/* table */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  
+  overflow:hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.content_td p {
+  max-width: 100%;
+  max-height: 100px;
+  overflow-y: auto;
+  text-overflow: ellipsis;
+}
+
+/* Column Size for thead */
+
+thead tr th:nth-child(1) {
+  width: 15%
+}
+
+thead tr th:nth-child(2) {
+  width: 15%;
+}
+
+thead tr th:nth-child(3) {
+  width: 60%;
+}
+
+thead tr th:nth-child(4) {
+  width: 10%;
+}
+
+/* Column size for tbody */
+
+tbody tr td:nth-child(1) {
+  width: 15%
+}
+
+tbody tr td:nth-child(2) {
+  width: 15%
+}
+
+tbody tr td:nth-child(3) {
+  width: 60%
+}
+
+tbody tr td:nth-child(4) {
+  width: 10%
+}
+
+@media screen and (max-width: 600px) {
+  /* table head rules */
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .content_td p {
+    max-width: 30%;
+    max-height: 60px;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    width: 40px;
+  }
+  
+  table {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+
+  /* table font rules */
+  thead th {
+    font-size: 10px;
+  }
+
+  tbody tr td {
+    font-size: 10px
+  }
+
+  /* rules for the form */
+  label {
+    width: 50px;
+  }
+
+  input {
+    width: 30px;
+  }
+
+
+  /* table head rules - use this to define the table header width */
+  thead tr th:nth-child(1) {
+    width: 20px;
+  }
+  
+  thead tr th:nth-child(2) {
+    width: 20px;
+  }
+  
+  thead tr th:nth-child(3) {
+    width: 20px;
+  }
+  
+  thead tr th:nth-child(4) {
+    width: 20px;
+  }
+
+  /* table body rules - use this to define the table body width */
+  tbody tr td:nth-child(1) {
+    width: 20px;
+  }
+  
+  tbody tr td:nth-child(2) {
+    width: 20px;
+  }
+  
+  tbody tr td:nth-child(3) {
+    width: 20px;
+  }
+  
+  tbody tr td:nth-child(4) {
+    width: 20px;
+  }
+  
+}
